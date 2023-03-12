@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+#player {
+  width: 320px;
+  height: 240px;
+  position: relative;
+  border-radius: 20px;
+}
+.controls {
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  opacity: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls:hover,
+.controls:focus-within {
+  opacity: 1;
+}
+.play {
+  border-left: 25px solid red;
+  border-top: 15px solid;
+  border-bottom: 15px solid;
+  cursor: pointer;
+}
+.pause {
+  height: 30px;
+  width: 10px;
+  background-color: rgb(106, 165, 42);
+  cursor: pointer;
+}
+.pause::after {
+  height: 30px;
+  width: 10px;
+  background-color: brown;
+  z-index: 2;
+  /* position: absolute; */
+  /* left: 20px; */
+  cursor: pointer;
+}
+.stop {
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  cursor: pointer;
+}
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: bisque;
+  cursor: pointer;
+}
+.time {
+  width: 40px;
+  cursor: pointer;
+}
